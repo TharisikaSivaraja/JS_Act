@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="Q1.js"></script>
+    <script src="Q2.js"></script>
+    <script src="Q3.js"></script>
+    <script src="Q4.js"></script>
+    <script src="Q5.js"></script>
+    <script src="Q6.js"></script>
+    <script src="Q7.js"></script>
+
+
+  </head>
+  <body>
+    <div>
+      Q1.<br>
+      Write the function to calculate a number’s square? 4
+      <p id = "Q1"></p>
+      <hr>
+<!--***********************************************************************-->
+    Q2.<br>
+    num1 =4 and num2 = 8<br>
+    <ol>
+      <li>The addition of the two numbers is <p id = "Q2add"></p></li>
+      <li>The multiplication of the two numbers is <p id = "Q2mul"></p></li>
+      <li>The subtraction of the two numbers is <p id = "Q2sub"></p></li>
+      <li>The division of the two numbers is <p id = "Q2div"></p></li>
+    </ol>
+    <hr>
+<!--***********************************************************************-->
+    Q3.<br>
+      <p id = "Q3">
+      <button onclick="myFunction()">Try it for Q3</button>
+    </p>
+      <hr>
+<!--***********************************************************************-->
+    Q4.<br>
+        <p id = "Q4"></p>
+        <hr>
+<!--***********************************************************************-->
+    Q5.<br>
+            <p id = "Q5"></p>
+            <hr>
+        <script type="text/javascript">
+                const person = {
+                firstName : "Nimal",
+                lastName  : "Raj",
+                age     : 15,
+                city  : "Kandy"
+              };
+
+            document.getElementById("Q5").innerHTML = "My name is " + person.firstName + " " + person.lastName + ". I'm" + person.age + " years old. I live in" + person.city;
+        </script>
+<!--***********************************************************************-->
+      Q6.<br>
+            <p id = "Q6"></p>
+            <hr>
+            <script type="text/javascript">
+                    const course = {
+                    courseName : "BIT",
+                    courseFee  : "Rs 150 000",
+                    startDate     : '12.06.2018',
+                    center  : "Our Office"
+                  };
+
+                document.getElementById("Q6").innerHTML = "Course Name: " + course.courseName +
+                 "<br>Fee: " + course.courseFee +
+                 "<br>Start Date: "+ course.startDate +
+                "<br>Center: " +course.center;
+            </script>
+<!--***********************************************************************-->
+Q12. What are the two methods for creating an empty array?<br>
+  <ol>
+    <li>set the array variable as empty example : <b>list = [];</b></li>
+    <li>set the array variable length equal to zero . example : <b>list.length = 0;</b></li>
+</ol>
+      <p id = "Q12"></p>
+      <hr>
+<!--***********************************************************************-->
+Q14.<br>
+      <p id = "Q14_1"></p>
+      <p id = "Q14_2"></p>
+
+      <p id = "Q14"></p>
+
+      <p id = "Q14_3"></p>
+
+      <script type="text/javascript">
+        var fruits = ["Apple","Banana"];
+        fruits.splice(1,0,"Kiwi");
+        fruits.splice(1,0,"Orange");
+        fruits.splice(1,0,"Mango");
+        document.getElementById("Q14_1").innerHTML = "fruit name in index 3 :" +fruits[2] ;
+        document.getElementById("Q14_2").innerHTML = "length of the array :" + fruits.length ;
+
+        document.getElementById("Q14").innerHTML = "order of elements of fruits: <br>" +fruits;
+
+        document.getElementById("Q14_3").innerHTML = "everse order of elements of fruits: <br>" +fruits.reverse();
+
+      </script>
+      <hr>
+<!--***********************************************************************-->
+Q15.<br>
+      <p id = "Q15"></p>
+      <script type="text/javascript">
+        let num = [4,1,8,3,9,12 ];
+        let num1 = numbers.sort()
+        document.getElementById("Q15").innerHTML = "sorted array<br>" + num1;
+      </script>
+
+      <hr>
+<!--***********************************************************************-->
+Q16.<br>
+      <p id = "Q16"></p>
+      <p id = "Q16_1"></p>
+      <p id = "Q16_2"></p>
+      <p id = "Q16_3"></p>
+      <script type="text/javascript">
+        var foods = ["rice", "pizza", "sandwich", "rolls"];
+        document.getElementById("Q16").innerHTML = "Food array elements : {" + foods + " }";
+        foods.pop();
+        document.getElementById("Q16_1").innerHTML = "after pop ,food array elements : { "  + foods + " }";
+
+        foods.push("cake");
+        document.getElementById("Q16_2").innerHTML = "after push ,food array elements : {" + foods + " }";
+
+        foods.shift();
+        document.getElementById("Q16_3").innerHTML = "Removes the first element,food array elements : { " +foods + " } ";
+      </script>
+      <hr>
+<!--***********************************************************************-->
+Q17.<br>
+      <p id = "Q17"></p>
+      <p id = "Q17_1"></p>
+      <p id = "Q17_2"></p>
+      <p id = "Q17_3"></p>
+
+      <script type="text/javascript">
+
+        var fruits = ["Apple"];
+        document.getElementById("Q17").innerHTML = "fruits array elements : {" + fruits + " }";
+
+        fruits.unshift("Pineapple","Lemon");
+        document.getElementById("Q17_1").innerHTML = "after add elemet befor Apple ,fruits array elements : { "  + fruits + " }";
+
+        fruits.push("Orange", "Peach");
+        document.getElementById("Q17_2").innerHTML = "after push ,fruits array elements : {" + fruits + " }";
+
+      </script>
+      <hr>
+<!--***********************************************************************-->
+<!--***********************************************************************-->
+<!--***********************************************************************-->
+<!--***********************************************************************-->
+    </div>
+    <script type="text/javascript">
+        var x=4,y=8;
+        document.getElementById("Q1").innerHTML = cakSqu(x);
+
+        document.getElementById("Q2add").innerHTML = addNum(x,y);
+        document.getElementById("Q2mul").innerHTML = multiNum(x,y);
+        document.getElementById("Q2sub").innerHTML = subtractNum(x,y);
+        document.getElementById("Q2div").innerHTML = divideNum(x,y);
+
+        document.getElementById("Q4").innerHTML = vcuboid(x,y,x);
+
+
+
+          const person = {
+            firstName : "Nimal",
+            lastName  : "Raj",
+            age     : 15,
+            city  : "Kandy"
+          };
+
+        document.getElementById("Q5").innerHTML = person.firstName + " " + person.lastName;
+
+
+    </script>
+  </body>
+</html>
